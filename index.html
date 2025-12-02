@@ -9,12 +9,42 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body>
+<body class="box-border p-0 m-0 bg-gray-200 w-full h-screen">
   <!-- Start Coding Here -->
 
-  <nav>
-    <!-- nav + hero -->
+  <nav class="p-4 sm:p-8 sm:mt-5 w-full">
+    <div class="flex justify-between items-center bg-white w-full py-3 px-4 md:py-6 md:px-8 rounded-full">
+      <div class="px-3 md:px-4 mx-10 md:mx-14 lg:mx-16">
+        <img src="./image/web-logo.png" alt="web-logo" class="w-28 h-auto">
+      </div>
+      <ul class="flex gap-8 px-6 sm:px-8 md:px-10 lg:px-12 text-xl sm:text-2xl cursor-pointer">
+        <li class="hover:text-purple-600 hover:underline">Home</li>
+        <li class="hover:text-purple-600 hover:underline">Features</li>
+        <li class="hover:text-purple-600 hover:underline">Pricing</li>
+        <li class="hover:text-purple-600 hover:underline">Contact</li>
+      </ul>
+    </div>
   </nav>
+
+  <main class="flex flex-col justify-center items-center w-full p-6 mt-20 mb-10 gap-5">
+    <div class="p-5 px-9 min-w-24 text-[#5E44FF] bg-[#563AFF1A] rounded-full text-xl">
+      <p>
+        🌈️ Acme Productivity App
+      </p>
+    </div>
+    <div class="p-5 w-full text-center">
+      <h1 class="text-9xl font-bold">Boost Your <span class="text-[#5E44FF]">Product</span>ivity</h1>
+    </div>
+    <div class="p-5 w-full text-center mb-3">
+      <p class="text-3xl font-bold">Streamline your workflow with our all-in-one productivity app.</p>
+    </div>
+    <div class="p-5 px-12 bg-black max-w-screen-md text-center rounded-2xl">
+      <button class="text-white text-xl">Start Free Trial</button>
+    </div>
+
+
+  </main>
+
 
   <section>
     <!-- Feature -->
@@ -23,7 +53,7 @@
   <!-- form -->
   <section class="flex flex-col justify-center items-center px-[120px] mb-[80px]">
     <!-- Contact Section -->
-    <div class="flex flex-col justify-center items-center w-full h-full bg-white rounded-3xl shadow-xl gap-10">
+    <div class="flex flex-col justify-center items-center w-[1200px] bg-white rounded-3xl shadow-xl gap-10">
       <h1 class="text-5xl font-bold pt-20 ">Get in Touch</h1>
 
       <form action="#" class="flex flex-col justify-start items-start gap-[16px]">
@@ -34,13 +64,13 @@
         <input id="contact_email" type="email" placeholder="john@example.com" class="h-12 w-[589px] rounded-xl border border-gray-500 px-3 pl-4">
         
         <label for="contact_message" class="text-2xl text-gray-500">Message</label>
-        <textarea placeholder="Your message..." class="h-28 w-[589px] rounded-xl border border-gray-500 px-3 pl-4"></textarea>
+        <textarea placeholder="Your message..." class="max-h-28 min-h-28 w-[589px] rounded-xl border border-gray-500 px-3 pl-4"></textarea>
         <button type="submit" class="w-[589px] h-[56px] bg-black text-white rounded-2xl mb-20">Submit</button>
       </form>
 
     </div>
     <!-- footer -->
-    <footer class="flex flex-row justify-between pt-[80px] w-full " >
+    <footer class="flex flex-row justify-between pt-[80px] w-[1200px] pb-[80px]" >
       <div>
         <p class="text-gray-500">Acme productivity app ©2024 </p>
       </div>
