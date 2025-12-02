@@ -1,25 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Acme App</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body>
-    <!-- Start Coding Here -->
 
-    <nav>
-      <!-- nav + hero -->
-    </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Acme App</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
 
-    <section>
-      <!-- Feature -->
-    </section>
+<body>
+  <!-- Start Coding Here -->
 
-    <section>
-      <!-- form -->
-    </section>
-  </body>
+  <nav>
+    <!-- nav + hero -->
+  </nav>
+
+  <section>
+    <!-- Feature -->
+  </section>
+
+  <!-- form -->
+  <section class="flex flex-col justify-center items-center px-[120px] mb-[80px]">
+    <!-- Contact Section -->
+    <div class="flex flex-col justify-center items-center w-full h-full bg-white rounded-3xl shadow-xl gap-10">
+      <h1 class="text-5xl font-bold pt-20 ">Get in Touch</h1>
+
+      <form action="#" class="flex flex-col justify-start items-start gap-[16px]">
+        <label for="contact_name" class="text-2xl text-gray-500">Name</label>
+        <input id="contact_name" type="text" placeholder="John Doe" class="h-12 w-[589px] rounded-xl border border-gray-500 px-3 pl-4">
+
+        <label for="contact_email" class="text-2xl text-gray-500">Email</label>
+        <input id="contact_email" type="email" placeholder="john@example.com" class="h-12 w-[589px] rounded-xl border border-gray-500 px-3 pl-4">
+        
+        <label for="contact_message" class="text-2xl text-gray-500">Message</label>
+        <textarea placeholder="Your message..." class="h-28 w-[589px] rounded-xl border border-gray-500 px-3 pl-4"></textarea>
+        <button type="submit" class="w-[589px] h-[56px] bg-black text-white rounded-2xl mb-20">Submit</button>
+      </form>
+
+    </div>
+    <!-- footer -->
+    <footer class="flex flex-row justify-between pt-[80px] w-full " >
+      <div>
+        <p class="text-gray-500">Acme productivity app ©2024 </p>
+      </div>
+      <div class="flex flex-row gap-9">
+        <a href="#" class="text-lg font-bold">FAQ</a>
+        <a href="#" class="text-lg font-bold">Terms</a>
+        <a href="#" class="text-lg font-bold">AI Policy</a>
+        <a href="#" class="text-lg font-bold">Pricing</a>
+      </div>
+    </footer>
+  </section>
+</body>
+
 </html>
