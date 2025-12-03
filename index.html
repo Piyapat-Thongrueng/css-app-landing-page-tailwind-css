@@ -9,7 +9,7 @@
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="box-border p-0 m-0 bg-gray-200 w-full h-screen">
+<body class="box-border p-0 m-0 bg-gray-200 w-screen h-screen">
   <!-- Start Coding Here -->
 
   <nav class="p-4 sm:p-8 sm:mt-5 w-full">
@@ -74,37 +74,64 @@
   </section>
 
   <!-- form -->
-  <section class="flex flex-col justify-center items-center px-[120px] mb-[80px]">
+  <section class="flex flex-col justify-center items-center 
+  px-4 mb-16
+  sm:px-4  sm:mb-16
+  xl:px-28 xl:mb-20 
+  w-full
+  ">
     <!-- Contact Section -->
-    <div class="flex flex-col justify-center items-center w-[1200px] bg-white rounded-3xl shadow-xl gap-10">
+    <div class="flex flex-col justify-center items-center 
+    min-w-[343px] max-w-[1200px] w-[343px] sm:w-[343px] xl:w-[1200px] 
+    min-h-[626px] max-h-[666px] h-[626px] sm:h-[626px] xl:h-[666px]
+    bg-white rounded-3xl shadow-xl gap-10 
+    ">
       <h1 class="text-5xl font-bold pt-20 ">Get in Touch</h1>
 
       <form action="#" class="flex flex-col justify-start items-start gap-[16px]">
-        <label for="contact_name" class="text-2xl text-gray-500">Name</label>
+        <label for="contact_name" class="text-base sm:text-base xl:text-2xl text-gray-500">Name</label>
         <input id="contact_name" type="text" placeholder="John Doe"
-          class="h-12 w-[589px] rounded-xl border border-gray-500 px-3 pl-4">
+          class="border-[#e0e0ed] h-12 w-[303px] max-w-[589px] min-w-[303px] sm:w-[303px] xl:w-[589px] rounded-xl border px-3 pl-4
+          placeholder-shown:text-base sm:placeholder-shown:text-base
+          placeholder-shown:p-[12px] placeholder-shown:pl-[16px]">
 
-        <label for="contact_email" class="text-2xl text-gray-500">Email</label>
+        <label for="contact_email" class="text-base sm:text-base xl:text-2xl text-gray-500">Email</label>
         <input id="contact_email" type="email" placeholder="john@example.com"
-          class="h-12 w-[589px] rounded-xl border border-gray-500 px-3 pl-4">
+          class="h-12 w-[303px] max-w-[589px] min-w-[303px] sm:w-[303px] xl:w-[589px] rounded-xl border border-[#e0e0ed] px-3 pl-4
+          placeholder-shown:text-base sm:placeholder-shown:text-base
+          placeholder-shown:p-[12px] placeholder-shown:pl-[16px]
+          ">
 
-        <label for="contact_message" class="text-2xl text-gray-500">Message</label>
+        <label for="contact_message" class="text-base sm:text-base xl:text-2xl text-gray-500">Message</label>
         <textarea placeholder="Your message..."
-          class="max-h-28 min-h-28 w-[589px] rounded-xl border border-gray-500 px-3 pl-4"></textarea>
-        <button type="submit" class="w-[589px] h-[56px] bg-black text-white rounded-2xl mb-20">Submit</button>
+          class="min-h-[102px] h-[102px] w-[303px]
+          sm:min-h-[102px] sm:max-h-[102px] sm:h-[102px] sm:w-[303px]
+          xl:min-h-[102px] xl:max-h-[102px] xl:h-[102px] xl:w-[589px] rounded-xl border border-[#e0e0ed] px-3 pl-4 
+          placeholder-shown:text-base sm:placeholder-shown:text-base
+          placeholder-shown:p-[12px] placeholder-shown:pl-[16px]
+          
+          "></textarea>
+        <button type="submit" class="max-w-[589px] min-w-[303px] w-[303px] h-[56px] sm:w-[303px] xl:w-[589px] bg-black text-white rounded-2xl mb-20
+          hover:bg-[#5F5F76] focus:bg-[#35354D] focus:ring-[#5F5F76]
+          ">Submit</button>
       </form>
 
     </div>
     <!-- footer -->
-    <footer class="flex flex-row justify-between pt-[80px] w-[1200px] pb-[80px]">
+    <footer class="flex flex-col justify-center items-center pt-[60px] min-w-[343px] max-w-[1200px] pb-[80px] gap-6 px-4
+    sm:pt-[60px] sm:w-[343px] sm:pb-[80px] sm:flex sm:flex-col sm:justify-center sm:items-center sm:gap-6 sm:px-4
+    xl:pt-[80px] xl:w-[1200px] xl:pb-[80px] xl:flex xl:flex-row xl:justify-between xl:items-center
+    ">
       <div>
         <p class="text-gray-500">Acme productivity app ©2024 </p>
       </div>
       <div class="flex flex-row gap-9">
-        <a href="#" class="text-lg font-bold">FAQ</a>
-        <a href="#" class="text-lg font-bold">Terms</a>
-        <a href="#" class="text-lg font-bold">AI Policy</a>
-        <a href="#" class="text-lg font-bold">Pricing</a>
+        <a href="#" class="text-base sm:text-base xl:text-lg font-bold hover:text-purple-600 hover:underline">FAQ</a>
+        <a href="#" class="text-base sm:text-base xl:text-lg font-bold hover:text-purple-600 hover:underline">Terms</a>
+        <a href="#" class="text-base sm:text-base xl:text-lg font-bold hover:text-purple-600 hover:underline">AI
+          Policy</a>
+        <a href="#"
+          class="text-base sm:text-base xl:text-lg font-bold hover:text-purple-600 hover:underline">Pricing</a>
       </div>
     </footer>
   </section>
