@@ -45,9 +45,32 @@
 
   </main>
 
-
-  <section>
-    <!-- Feature -->
+  <!-- Feature -->
+  <section class="flex flex-col justify-center items-center space-y-5 p-5">
+    <div class="flex w-full flex-col p-4 bg-[#D7E5F6] rounded-xl space-y-3">
+      <div class="inline-flex items-center justify-center bg-[#F6F6FB] rounded-2xl p-3 w-fit">
+        <img src="./image/rocket.png" alt="rocket" class="w-7 h-auto">
+      </div>
+      <h3 class="font-bold">Streamlined Workflows</h3>
+      <p class="font-light text-gray-600">Automate repetitive tasks and focus on high-impact work with our
+        powerful productivity features.</p>
+    </div>
+    <div class="flex w-full flex-col p-4 bg-[#D8E0FC] rounded-xl space-y-3">
+      <div class="inline-flex items-center justify-center bg-[#F6F6FB] rounded-2xl p-3 w-fit">
+        <img src="./image/board.png" alt="board" class="w-7 h-auto">
+      </div>
+      <h3 class="font-bold">Blazing Fast Performance</h3>
+      <p class="font-light text-gray-600">Experience lightning-fast performance and instant responsiveness with
+        our cutting-edge technology.</p>
+    </div>
+    <div class="flex w-full flex-col p-4 bg-[#E8DCF6] rounded-xl space-y-3">
+      <div class="inline-flex items-center justify-center bg-[#F6F6FB] rounded-2xl p-3 w-fit">
+        <img src="./image/smile.png" alt="smile" class="w-7 h-auto">
+      </div>
+      <h3 class="font-bold">Intuitive Interface</h3>
+      <p class="font-light text-gray-600">Our user-friendly interface makes it easy for anyone to streamline their
+        workflow.</p>
+    </div>
   </section>
 
   <!-- form -->
@@ -58,19 +81,22 @@
 
       <form action="#" class="flex flex-col justify-start items-start gap-[16px]">
         <label for="contact_name" class="text-2xl text-gray-500">Name</label>
-        <input id="contact_name" type="text" placeholder="John Doe" class="h-12 w-[589px] rounded-xl border border-gray-500 px-3 pl-4">
+        <input id="contact_name" type="text" placeholder="John Doe"
+          class="h-12 w-[589px] rounded-xl border border-gray-500 px-3 pl-4">
 
         <label for="contact_email" class="text-2xl text-gray-500">Email</label>
-        <input id="contact_email" type="email" placeholder="john@example.com" class="h-12 w-[589px] rounded-xl border border-gray-500 px-3 pl-4">
-        
+        <input id="contact_email" type="email" placeholder="john@example.com"
+          class="h-12 w-[589px] rounded-xl border border-gray-500 px-3 pl-4">
+
         <label for="contact_message" class="text-2xl text-gray-500">Message</label>
-        <textarea placeholder="Your message..." class="max-h-28 min-h-28 w-[589px] rounded-xl border border-gray-500 px-3 pl-4"></textarea>
+        <textarea placeholder="Your message..."
+          class="max-h-28 min-h-28 w-[589px] rounded-xl border border-gray-500 px-3 pl-4"></textarea>
         <button type="submit" class="w-[589px] h-[56px] bg-black text-white rounded-2xl mb-20">Submit</button>
       </form>
 
     </div>
     <!-- footer -->
-    <footer class="flex flex-row justify-between pt-[80px] w-[1200px] pb-[80px]" >
+    <footer class="flex flex-row justify-between pt-[80px] w-[1200px] pb-[80px]">
       <div>
         <p class="text-gray-500">Acme productivity app ©2024 </p>
       </div>
